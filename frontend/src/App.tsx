@@ -1,11 +1,17 @@
-import NotificationButton from "./components/NotificationButton";
-
+import Header from "./components/Header";
+import './index.css';
+import SalesCard from "./components/SalesCard";
 const App = () => {
   return (
     <>
-    <h1>Clean React Project</h1>
-    <NotificationButton/>
-    <NotificationButton/>
+      <Header/>
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container"> 
+            <SalesCard/>          
+          </div>
+        </section>
+      </main>
     </>
   );
 }

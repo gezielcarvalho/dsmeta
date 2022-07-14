@@ -1,3 +1,5 @@
+import './styles.css';
+
 interface ISalesTableProps {
     children?: React.ReactNode
   }

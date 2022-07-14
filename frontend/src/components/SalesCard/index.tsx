@@ -13,8 +13,8 @@ const SalesCard = () => {
                 <InputRange/>
                 <SalesTable>
                     <SalesRow sales_value={12345.67}/>
+                    <SalesRow sales_value={1111.30}/>
                 </SalesTable>
-                <NotificationButton/>
             </div>
         </div>
     )

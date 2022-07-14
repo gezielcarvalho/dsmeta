@@ -6,7 +6,10 @@ interface ISalesRowProps {
 }
 
 const SalesRow = ({sales_value} : ISalesRowProps) => {
-  const dollarUSLocale = Intl.NumberFormat('en-US');
+  const dollarUSLocale = Intl.NumberFormat('en-US',{
+    style: "currency",
+    currency: "USD",
+});
   return (
     <tr>
         <td className="show992">#341</td>
@@ -14,7 +17,7 @@ const SalesRow = ({sales_value} : ISalesRowProps) => {
         <td>Anakin</td>
         <td className="show992">15</td>
         <td className="show992">11</td>
-        <td>U$ {dollarUSLocale.format(sales_value)}</td>
+        <td>{dollarUSLocale.format(sales_value)}</td>
         <td>
             <div className="dsmeta-red-btn-container">
             <NotificationButton />
